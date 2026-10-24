@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+}
+
+:root {
+    --dark-charcoal : #1E1E2E;
+    --slate-grey : #2A2A3C;
+    --vivid-orange : #FF9500;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--vivid-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container > .app-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container > .app-container > .result-app {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.container > .app-container > .result-app > input {
+    width: 100%;
+    background-color: var(--dark-charcoal);
+    padding: 10px 15px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    text-align: right;
+}
+
+.container > .app-container > .btn-list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 5px;
+}
+
+.container > .app-container > .btn-list > .btn {
+    font-size: 20px;
+    padding: 5px;
+    outline: none;
+    background-color: white;
+    border: 2px solid var(--dark-charcoal);
+    cursor: pointer;
+}
+
+.container > .app-container > .btn-list > .btn:hover {
+    background-color: var(--dark-charcoal);
+    color: white;
+    transition: .5s;
+}
+
+.container > .app-container > .btn-list > .btn-equal {
+    background-color: var(--vivid-orange);
+    color: white;
+    grid-row: 2 / 6;
+    grid-column: 4 / 5;
+    border-radius: 0 0 10px 0;
+}
+
+.container > .app-container > .btn-list > .btn-zero {
+    border-radius: 0 0 0 10px;
+}
