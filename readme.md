@@ -7,7 +7,7 @@ A sleek and responsive calculator web application built with HTML, CSS, and Java
 ## 📱 Interface Preview
 
 <p align="center">
-  <img src="./assets/calculator-preview.png" alt="Calculator Preview" width="500" style="border-radius: 12px;">
+  <img src="./calculator-preview.png" alt="Calculator Preview" width="500" style="border-radius: 12px;">
 </p>
 
 ---
